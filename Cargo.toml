@@ -1,0 +1,14 @@
+[package]
+name = "syntext-ext-php"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ext-php-rs = "0.12.0"
+syntect = "5.2.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+strip = "debuginfo"
